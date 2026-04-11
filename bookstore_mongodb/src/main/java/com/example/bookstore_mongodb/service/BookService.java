@@ -24,4 +24,11 @@ public class BookService {
         return bookRepository.findAll();
     }
 
+    public boolean existsById(String id) {
+        return bookRepository.existsById(id);
+    }
+
+    public void deleteBook(String id) {
+        bookRepository.deleteById(id);
+    }
 }
